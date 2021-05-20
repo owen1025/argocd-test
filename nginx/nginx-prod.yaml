@@ -11,3 +11,5 @@ spec:
     version: 8.8.4
   values:
     replicaCount: 2
+    service:
+      type: ClusterIP
