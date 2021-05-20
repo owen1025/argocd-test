@@ -1,0 +1,13 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: nginx-prod
+  namespace: default
+spec:
+  releaseName: nginx-prod
+  chart:
+    repository: https://charts.bitnami.com/bitnami
+    name: nginx
+    version: 8.8.4
+  values:
+    replicaCount: 2
